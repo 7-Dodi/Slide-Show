@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      .conatiner {
+        overflow: hidden;
+        width: 800px;
+      }
+      .slider {
+        position: relative;
+        width: 3200px;
+        animation-name: slideranime;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+      }
+      .slider img {
+        float: left;
+        width: 800px;
+        height: 300px;
+      }
+      @keyframes slideranime {
+        0% {
+          left: 0px;
+        }
+        20% {
+          left: 0px;
+        }
+        25% {
+          left: -800px;
+        }
+        45% {
+          left: -800px;
+        }
+        50% {
+          left: -1600px;
+        }
+        55% {
+          left: -1600px;
+        }
+        70% {
+          left: -2400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <div class="slider">
+        <img src="./imagem/team1.png" />
+        <img src="./imagem/team2.png" />
+        <img src="./imagem/team3.png" />
+        <img src="./imagem/team4.png" />
+      </div>
+    </div>
+  </body>
+</html>
